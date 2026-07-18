@@ -1,0 +1,78 @@
+.syncopate-regular {
+font-family: "Syncopate", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.syncopate-bold {
+font-family: "Syncopate", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+.floating-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+}
+.floating-btn .main-btn  {
+    width: 50px;
+    height: 50px;
+    color: #d5c1f7;
+    display: grid;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+    position: relative;
+    cursor: pointer;
+    transition: all 300ms ease;
+
+}
+.floating-btn.active .main-btn {
+    transform: rotateZ(45deg);
+}
+.floating-btn .options {
+    color: #ffd6f3;
+    cursor: pointer;
+    position: absolute;
+    transform: translate(30px, 30px) scale(0);
+    opacity: 0;
+    transition: all 300ms ease;
+
+
+}
+.floating-btn.active .options {
+    transform: translate(5px, 5px) scale(1);
+    opacity: 1;
+}
+.floating-btn .option {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    border-radius: 50%;
+    padding:8px 12px;
+    box-shadow: 2px 4px 8px -3px rgba(0, 0, 0, 0.3);
+    position: relative;
+    color: #d5c1f7;
+
+}
+
+.floating-btn .option:nth-child(1) {
+    transform: translate(-95px, 20px) rotate(354deg);
+}
+.floating-btn .option:nth-child(2) {
+    transform: translate(-74px, 20px) rotate(354deg);
+}
+
+footer {
+    background-color: #ffd6f3;
+    text-align: center;
+    padding: 8px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+@media screen and (max-width:600px) {
+    div.flex-container {
+    flex-direction: column;
+}
+}

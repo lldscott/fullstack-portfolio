@@ -1,0 +1,122 @@
+
+<!Doctype html>
+
+<html>
+<head> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "yB5JsVUQYYhupWiBQ",
+        });
+    })();
+    </script>
+    
+</head>
+<style> 
+
+    body { 
+        background-color: #fffdfc;
+        font-family: syncopate, sans-serif;
+        font-size: 16px;
+    }
+    p {
+        font-size: 16px;
+        font-family: syncopate, sans-serif;
+        color:#15051c   
+    }
+    ul.nav-bar {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    background-color: #ffd6f369;
+    display: block;
+    padding: 14px 16px;
+    
+    
+}
+
+    ul.nav-bar li a{
+    display: block;
+    color:#210c2b;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+ul.nav-bar li a:hover:not(.active) {
+    background-color: 	#111111;
+    color: #8c6c75;
+}
+ul.nav-bar li a:active {
+    background-color: #8c6c75;
+}
+.center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        border: 3px solid #b71b88;
+        padding-top: 60px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+    }
+</style>
+
+<body>
+
+<div>
+    <ul class="nav-bar" >
+        <li style="float:left">
+            <a href="index.html" class="active">logo</a>
+        </li>
+        <li style="float:right">
+            <a href="contact.html">Contact</a>
+        </li>
+        <li style="float:right">
+            <a href="#faq" >FAQ</a>
+    </ul>
+    </div>
+<br> 
+    <div >
+        <h1 class="center" style="color: #8c6c75;">Contact Me</h1>
+        <form class="center" id="contactForm" style="opacity: 0.6;">
+            <div >
+            <div class="flex-container">
+                <input type="text" id="name" placeholder="name" required />
+            </div>
+            <div>    
+                <input type="text" id="subject" placeholder="subject" required />
+            </div>
+                
+            <div>
+                <input type="email" id="email" placeholder="email" required />      
+            </div>
+            <div>
+                <textarea id="message" placeholder="message" required></textarea>
+            </div>
+
+            <button style="background-color: #dac5fe; color: #15051c;" type="button" onclick="sendEmail()">Send</button>
+        </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    
+
+
+
+<footer > 
+    <h6> Engineered web application from scratch, writing all logic and styling from scratch in Visual Studio Code </h6>
+    <h6> Lexia Full Stack Engineer</h6>
+</footer>
+
+</body>
+</html>

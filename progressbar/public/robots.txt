@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://day-1598-progress-bar-ui-design-yy23o9.teleporthq.site/sitemap.xml
