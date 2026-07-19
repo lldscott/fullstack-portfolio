@@ -30,3 +30,8 @@ document.addEventListener("click", (e) => {
         floatingBtn.classList.remove("active");
     }
 })
+
+function contactForm() {
+    var myWindow = window.open("contact.html", "MsgWindow", "width=200,height=100");
+    
+}
