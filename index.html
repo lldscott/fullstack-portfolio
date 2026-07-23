@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html> 
 <head>
-<link rel="stylesheet" href="style.css"> 
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="font" href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
 <title> Lexia Full Stack Developer</title>
+<link rel="stylesheet" href="style.css"> 
 </head>
 
 <style>
@@ -20,20 +21,20 @@
     p {
         font-size: 16px;
         font-family: syncopate, sans-serif;
-        color:#210c2b
+        color:#8c6c75;
+        padding: 10%;
     }
     div {
         margin-bottom: 20px;
         font-size: 16px;
         font-family: syncopate, sans-serif;
-        color:#210c2b
+        color:#8c6c75;
     }
     .center {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 50px;
-        border: 3px solid #ffd6f3;
         padding-top: 85px;
         padding-right: 30px;
         padding-bottom: 85px;
@@ -109,38 +110,51 @@ ul.nav-bar li a:active {
 
 <div>
     <div>
-        <div class="center">
-            <h3> Education </h3>
-        </div>
-        <div class="center">
-            <div class="flex-container">
-                <div>
-                    <h4 style="color: #8c6c75;"> Osseo Senior High  </h4>
-                    <p> Graduated in 2016</p>
-                </div>
-                <div>
-                    <h4 style="color: #8c6c75;"> University of Northwestern St. Paul — PSEO</h4>
-                    <p>August 2015 - May 2017</p>
-                </div>
-        <div>
-            <h4 style="color: #8c6c75;"> Metropolitan University of St. Paul — Computer Science BS </h4>
-            <p>Estimated Graduation Year 2028</p>
-            <p1> Studying Computer Science BS </p1>
-        </div>
+            <h1 class="center"> Education </h1>
         
-        </div>
-        </div>
-        </div>
-    </div>
-        <div>
-        <br>
+        <div class="timeline-wrapper">
+            <ul class="timeline ">
+                <li data-date="August 2015 - May 2018">
+                    <p class="title"> University of Northwestern St. Paul - PSEO </p>
+                    <div class="data"> 
+                        <p> Post Secondary Education Option</p>
+                    </div>
+                </li>
+                <li data-date="2016">
+                    <p class="title"> Osseo Senior High School</p>
+                    <div class="data"> 
+                        <p> Graduated with High School Diploma</p>
+                    </div>
+                </li>
+                
+                <li data-date="August 2018-2021">
+                    <p class="title"> North Hennipen Community College </p>
+                    <div class="data"> 
+                        <p> Transfer Pathways studying computer science / software engineering</p>
+                        
+                    </div>
+                </li>
+                <li data-date="2021-2023">
+                    <p class="title"> Metropolitan University of St. Paul — Computer Science BS </p>
+                    <div class="data "> 
+                        <p> Studying Studying Computer Science BS </p>
+                        
+                    </div>
+                </li>
+                <li data-date=" Estimated Graduation Year 2028">
+                    <p class="title"> Arizona State University — Computer Science BS </p>
+                    <div class="data ">
+                        <p> Studying Computer Science BS </p>
+                        
+                    </div>
+                </li>
+            </ul>
 
+        </div>
         <h3 class="center"> Digital Art</h3>
-
-<div>
-
-<img src="PNG image.png" width="200" height="200">
-</div>
+        <div>
+            <img src="PNG image.png" width="200" height="200">
+        </div>
 
 <div>
 
@@ -151,7 +165,7 @@ ul.nav-bar li a:active {
 </div>
 <h3 class="center"> Skills</h3>
     <!-- use icons to represent skills -->
-    <ul >
+    <ul  >
         <li> HTML</li>
         <li> CSS</li>
         <li> JavaScript</li>
@@ -169,7 +183,7 @@ ul.nav-bar li a:active {
     <!--<img src="projectspic.png" >-->
     </div>
     <div class="center">
-    <h4 style="color: #8c6c75;"> Mock Project</h4>
+    <h4 style="color: #8c6c75;"> Personal Project</h4>
     <!-- enter project before pics and after include descriptions of workflow-->
 </div>
 <div class="center">

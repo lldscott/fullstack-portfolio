@@ -81,9 +81,163 @@ footer {
         justify-content: center;
         align-items: center;
         height: 50px;
-        border: 3px solid #ffd6f3;
+        
         padding-top: 85px;
         padding-right: 30px;
         padding-bottom: 85px;
         padding-left: 80px;
     }
+:root {
+    --primary-color: #ffd6f3;
+
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: "Syncopate", sans-serif;
+}
+.timeline-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.timeline-wrapper {
+    position: relative;
+    max-width: 100vw;
+    height: 88vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    }
+.timeline {
+    position: absolute;
+    height: .12rem;
+    padding: 0 4rem;
+    background-color: #888;
+    list-style-type: none;
+    --scale: 1;
+    display: flex;
+    }
+
+.timeline li {
+    position: relative;
+    width: 20rem;
+
+    }
+.timeline li::before,
+.timeline li::after,
+.timeline li .title,
+.data {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(var(--scale));
+    transition: .5s ease;
+}
+
+.timeline li::before {
+    top: 1rem;
+    display: inline-block;
+    width: 0.12rem;
+    height: 1rem ;
+    background-color: #888;
+}
+
+.timeline li:nth-child(even):before {
+    top: -1rem;
+}
+
+.timeline li:hover::before {
+    background-color: var(--primary-color);
+}
+.timeline li::after {
+    content: attr(data-date);
+    top: -3.4rem;
+}
+
+.timeline li:nth-child(odd)::after {
+    top: 3.4rem;
+}
+.timeline li:hover::after,
+.timline li .title {
+    color: var(--primary-color);
+
+    
+}
+.timeline li .title {
+    top:2.4rem;
+    font: 600 1.1rem 'poppins', sans-serrif;
+    white-space: pre;
+    opacity: 0;
+    
+    
+}
+.timeline li .data.show {
+    top: 10rem;
+    
+}
+
+.timeline li:nth-child(odd) >.title {
+    top: -2.4rem;
+}
+.timeline li:nth-child(odd) >.data.show {
+        top: -12rem;
+
+}
+.timeline li:hover .title {
+    opacity: 1;
+    
+}
+.data {
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: #15051c;
+    overflow: hidden;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: .3s ease;
+    opacity: 1;
+    
+}
+
+.timeline li:hover .data {
+    background-color: var(--primary-color);
+    --scale: 1.2;
+    cursor: pointer;
+    z-index: 200;
+}
+.data.show {
+    width: auto;
+    height: auto;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    position: absolute;
+    bottom: 10;
+    right: 6;
+    background-image: linear-gradient(45deg, var(--primary-color), #dac5fe);
+    z-index: 100;
+    box-shadow: 0 .1rem .4rem #0004;
+    opacity: 0;
+    transition: opacity 10s ease-in-out;
+}
+
+.data p {
+    background-color: #fff3;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-left: auto;
+    color: #fff;
+    
+}
+.data.show p {
+    margin-left: auto; 
+}
+
+
