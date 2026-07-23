@@ -1,3 +1,6 @@
+
+
+
 function sendEmail(){ 
     const templateParams = {
         name: document.querySelector("#name").value,
@@ -35,3 +38,46 @@ function contactForm() {
     var myWindow = window.open("contact.html", "MsgWindow", "width=200,height=100");
     
 }
+
+const timeline_wrapper = document.querySelector('.timeline-wrapper')
+
+const timelines = document.querySelectorAll('.timeline li .data');
+
+for (const time of timelines) {
+    time.onclick =() => time.classList.toggle('show');
+
+    time.addEventListener('click', (event) => {
+    
+
+    if(!time.classList.toggle('show')) {
+        time.classList.add('show');
+
+        hideTimer = setTimeout(() => {
+            time.classList.remove('show');
+
+        }, 10000);
+
+    } else {
+        time.classList.remove('show');
+    }
+});
+
+
+
+
+
+}  
+timeline_wrapper.addEventListener('mousemove', (event) => {
+        const timeline = document.querySelector('.timeline');
+        let scroll_width = event.pageX / timeline_wrapper.clientWidth 
+        * ( timeline_wrapper.clientWidth - timeline.clientWidth);
+        
+        timeline.style.left = scroll_width.toFixed(1) + 'px';
+    })
+    
+    
+
+    
+    
+
+
