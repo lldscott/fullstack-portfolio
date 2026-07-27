@@ -1,12 +1,18 @@
 
+window.onload =  function() {
+    const form = document.querySelector("form");
 
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+    })
+}
 
 function sendEmail(){ 
     const templateParams = {
-        name: document.querySelector("#name").value,
-        email: document.querySelector("#email").value,   
-        subject: document.querySelector("#subject").value,
-        message: document.querySelector("#message").value,
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,   
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
 };
 
 emailjs
@@ -34,11 +40,21 @@ document.addEventListener("click", (e) => {
     }
 })
 
-function contactForm() {
-    var myWindow = window.open("contact.html", "MsgWindow", "width=200,height=100");
-    
-}
+//const contact_btn = document.querySelector('.contact');
 
+//for (const btn of contact) {
+   // btn.onclick =() => btn.classList.toggle('show');
+
+  //  btn.addEventListener('click', (event) => {
+    
+
+   // if(!btn.classList.toggle('contact.html')) {
+  //      btn.classList.add('contact.html');
+
+   // } else {
+   //     time.classList.remove('contact.html');
+  //  }
+//});
 const timeline_wrapper = document.querySelector('.timeline-wrapper')
 
 const timelines = document.querySelectorAll('.timeline li .data');
@@ -61,12 +77,8 @@ for (const time of timelines) {
         time.classList.remove('show');
     }
 });
+}
 
-
-
-
-
-}  
 timeline_wrapper.addEventListener('mousemove', (event) => {
         const timeline = document.querySelector('.timeline');
         let scroll_width = event.pageX / timeline_wrapper.clientWidth 
@@ -76,8 +88,4 @@ timeline_wrapper.addEventListener('mousemove', (event) => {
     })
     
     
-
-    
-    
-
 
