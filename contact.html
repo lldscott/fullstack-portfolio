@@ -21,7 +21,7 @@
 </head>
 <style> 
 
-    body { 
+body { 
         background-color: #ffd6f369;
         
         font-size: 16px;
@@ -99,8 +99,177 @@ ul.nav-bar li a:active {
         padding-left: 30%;
         padding-right: 10%;
     }
-</style>
 
+@media (max-width: 1024px) {
+body { 
+        background-color: #ffd6f369;
+        
+        font-size: 1rem;
+    }
+    p {
+        font-size: 1rem;
+        color:#15051c   
+    }
+    ul.nav-bar {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right,#d5c1febf, #ffd6f3c3 );
+    display: block;
+    padding: 0.88rem 1rem;
+    
+    
+}
+
+    ul.nav-bar li a{
+    display: block;
+    padding: 0.88rem 1rem;
+
+    text-align:center;
+    text-decoration: none;
+    color: #8c6c75;
+    
+}
+ul.nav-bar li a:hover:not(.active) {
+    opacity: 0.5;
+
+}
+ul.nav-bar li a:active {
+    background-color: #8c6c75;
+}
+.center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3.13rem;
+        padding-top: 3.75rem;
+        padding-right: 1.88rem;
+        padding-bottom: 3.13rem;
+        padding-left: 5rem;
+    }
+    .center-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 25%;
+        padding-top: 13%;
+        padding-bottom: 10%;
+    }
+    .info-format {
+        position: absolute;
+        padding: 5%;
+        padding-left: 15%;
+        
+    }
+    .input {
+        font-size: 1rem;        
+        padding: 0.63rem 2.81rem;     
+        width: 35.94rem;
+        padding: 2%;
+        
+    }
+    .position {
+        position: center;
+        padding-top: 12.5rem;
+    }
+    .business {
+        padding-top: 50%;
+        padding-bottom: 10%;
+        padding-left: 30%;
+        padding-right: 10%;
+    }
+}
+
+
+@media (max-width: 600px) {
+body { 
+        background-color: #ffd6f369;
+        
+        font-size: 1rem;
+    }
+    p {
+        font-size: .4rem;
+        color:#15051c   
+    }
+    ul.nav-bar {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right,#d5c1febf, #ffd6f3c3 );
+    display: block;
+    padding: 0.88rem 1rem;
+    
+    
+}
+
+    ul.nav-bar li a{
+    display: block;
+    padding: 0.88rem 1rem;
+
+    text-align:center;
+    text-decoration: none;
+    color: #8c6c75;
+    
+}
+ul.nav-bar li a:hover:not(.active) {
+    opacity: 0.5;
+
+}
+ul.nav-bar li a:active {
+    background-color: #8c6c75;
+}
+.center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3.13rem;
+        padding-right: 0%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+
+        
+    }
+    .center-card {
+        display: relative;
+        padding-right:0%;
+        padding-top: 0rem;
+    }
+    .info-format {
+        position: relative;
+        padding: 0%;
+        margin: 0%;
+        
+    }
+    .input {
+        font-size: 1rem;            
+        width: 100%;
+        padding: 0%;
+        
+    }
+    
+    .position {
+        position: center;
+        padding: auto;
+        padding-top: 10rem;
+        padding-left: 0%;
+        padding-right: 10%;
+        
+        
+    }
+    .business {
+        padding-left: 5%;
+        padding-right: 0%;
+        padding-top: 30%;
+    }
+    .card {
+        padding-left: 10%;
+        padding-right: 0%;
+    }
+}
+
+</style>
 <body>
 <div>
     <ul class="nav-bar" >
@@ -122,10 +291,9 @@ ul.nav-bar li a:active {
         <div>
             <div class="flex-container">
         <form class="center" id="contactForm" style="opacity: 0.6;">
-            <div class="position" >
-            <div class="container">
-                <input   class="input" type="text" id="name" placeholder="name"  required />
-            </div>
+            <div class="position">
+                <input   class="input" type="text" id="name" placeholder="name" required />
+            
             <div>    
                 <input class="input" type="text" id="subject" placeholder="subject"  required />
             </div>
@@ -133,7 +301,7 @@ ul.nav-bar li a:active {
                 <input class="input" type="email" id="email" placeholder="email"  required />      
             </div>
             <div>
-                <textarea id="message" placeholder="message" rows="10" cols="50" required></textarea>
+                <textarea  class="input"    id="message" placeholder="message" rows="10" cols="50" required></textarea>
             </div>
             <button style="background-color: #dac5fe; color: #15051c;" type="button" onclick="sendEmail()">Send</button>
         </div>
@@ -144,14 +312,12 @@ ul.nav-bar li a:active {
     <script src="script.js"></script>
     <br>
 <div class="business">
+    <div>
     <h1 class="center-card"> Digital Business Card </h1>
-    <img src="businesslogo5.png" alt="business card">
+    <img  class="card" src="businesslogo5.png" width="500" height="300"   alt="business card">
     <h3 class="center-card"> Share forward to others needing help with Web application or digital graphics! </h3>
 </div>
-
-
-
-
+</div>
 <footer> 
     <h6> Engineered web application from scratch, writing all logic and styling from scratch in Visual Studio Code </h6>
     <h6> Lexia Full Stack Engineer</h6>

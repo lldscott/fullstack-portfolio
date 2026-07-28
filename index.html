@@ -9,20 +9,19 @@
 <title> Lexia Full Stack Developer</title>
 
 </head>
-
 <style>
-    
-    body {
+
+body {
         background-color: #ffd6f369;
         font-family: 'syncopate', sans-serif;
-        font-size: 16px;
+        font-size: 1rem;
         padding: 2%;
         
 
 
     }
     p {
-        font-size: 18px;
+        font-size: 1.13rem;
         font-family: 'syncopate', sans-serif;
         color:#8c6c75;
         padding-right: 10%;
@@ -30,7 +29,79 @@
         
     }
     div {
-        font-size: 16px;
+        font-size: 1rem;
+        font-family: 'syncopate', sans-serif;
+        color:#8c6c75;
+    }
+    
+    
+    
+div.flex-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+
+}
+div.flex-container > div {
+margin: 0.63rem;
+}
+
+div.flex-container {
+    flex-direction: column;
+}
+
+ul.nav-bar {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right,#d5c1febf, #ffd6f3c3 );
+    display: block;
+    
+    
+}
+
+ul.nav-bar li a{
+    display: block;
+    text-align:center;
+    padding: 0.88rem 1rem;
+    text-decoration: none;
+    color: #8c6c75;
+
+}
+ul.nav-bar li a:hover:not(.active) {
+    opacity: 0.5;
+    
+}
+ul.nav-bar li a:active {
+    background-color: #8c6c75;
+}
+.letter {
+    word-spacing: 35%;
+    letter-spacing: 2;
+    line-height: 180%;
+    display: block;
+}
+@media (max-width: 1024px) {
+body {
+        background-color: #ffd6f369;
+        font-family: 'syncopate', sans-serif;
+        font-size: 1rem;
+        padding: 2%;
+        
+
+
+    }
+    p {
+        font-size: 1.13rem;
+        font-family: 'syncopate', sans-serif;
+        color:#8c6c75;
+        padding-right: 10%;
+        padding-left: 5%;
+        
+    }
+    div {
+        font-size: 1rem;
         font-family: 'syncopate', sans-serif;
         color:#8c6c75;
     }
@@ -46,11 +117,11 @@ div.flex-container {
 div.flex-container > div {
 margin: 10px;
 }
-@media screen and (max-width:600px) {
+
 div.flex-container {
     flex-direction: column;
 }
-}
+
 ul.nav-bar {
     list-style-type: none;
     margin: 0%;
@@ -58,7 +129,7 @@ ul.nav-bar {
     overflow: hidden;
     background-image: linear-gradient(to bottom right,#d5c1febf, #ffd6f3c3 );
     display: block;
-    padding: 14px 16px;
+    padding: 0.88rem 1rem;
     
     
 }
@@ -66,7 +137,7 @@ ul.nav-bar {
 ul.nav-bar li a{
     display: block;
     text-align:center;
-    padding: 14px 16px;
+    padding: 0.88rem 1rem;
     text-decoration: none;
     color: #8c6c75;
 
@@ -85,6 +156,85 @@ ul.nav-bar li a:active {
     display: block;
 }
 
+}
+
+@media screen and (max-width:600px) {
+body {
+        background-color: #ffd6f369;
+        font-family: 'syncopate', sans-serif;
+        font-size: 1rem;
+        padding: 2%;
+        
+
+
+    }
+    p {
+        font-size: 1rem;
+        font-family: 'syncopate', sans-serif;
+        color:#8c6c75;
+        padding-right: 10%;
+        padding-left: 5%;
+        
+    }
+    div {
+        font-size: 1rem;
+        font-family: 'syncopate', sans-serif;
+        color:#8c6c75;
+    }
+    
+    
+    
+div.flex-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0.63rem;
+
+}
+div.flex-container > div {
+margin: 0.63%;
+}
+
+
+
+
+
+    div.flex-container {
+    flex-direction: column;
+}
+ul.nav-bar {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right,#d5c1febf, #ffd6f3c3 );
+    display: block;
+    padding:  1rem;
+    
+    
+}
+
+ul.nav-bar li a{
+    display: block;
+    text-align:center;
+    padding: 0.88rem 1rem;
+    text-decoration: none;
+    color: #8c6c75;
+
+}
+ul.nav-bar li a:hover:not(.active) {
+    opacity: 0.5;
+    
+}
+ul.nav-bar li a:active {
+    background-color: #8c6c75;
+}
+.letter {
+    word-spacing: 35%;
+    letter-spacing: 2;
+    line-height: 180%;
+    display: block;
+}
+}
 </style>
 <body>   
     <div>
@@ -149,17 +299,17 @@ ul.nav-bar li a:active {
     <div class="center">
 <h2> Projects </h2>
     </div >
-    <div >
+    <div class="flex-container">
         <div >
             <div class="center-vd">
-    <video width="500" height="240" autoplay muted>
+    <video width="375" height="240" autoplay muted>
         <source src="phase1portfoliovid.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 </div>
 <br>
 <div class="center-vd">
-<video width="500" height="240" autoplay muted>
+<video width="375" height="240" autoplay muted>
         <source src="phase2.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
@@ -262,8 +412,8 @@ Your browser does not support the video tag.
 </body>
     <script src="script.js"></script>
     <footer> 
-    <h6> Engineered web application from scratch, writing all logic and styling from scratch in Visual Studio Code </h6>
-    <h6> Lexia Full Stack Engineer</h6>
+    <h6 > Engineered web application from scratch, writing all logic and styling from scratch in Visual Studio Code </h6>
+    <h6 > Lexia Full Stack Engineer</h6>
 </footer>
 </body>
 </html>
