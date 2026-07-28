@@ -395,6 +395,7 @@ footer {
     padding: 37%;
     padding-top: 0.63rem;
     padding-bottom: 0.63rem;
+    padding-right: 40%;
 }
 .center {
         display: flex;
@@ -715,6 +716,7 @@ div.flex-container {
     padding: 0%;
     padding-top: 0.63rem;
     padding-bottom: 0.63rem;
+    padding-left: 15%;
 }
 .center {
         display: flex;
