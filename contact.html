@@ -23,11 +23,11 @@
 
 body { 
         background-color: #ffd6f369;
-        
-        font-size: 16px;
+        padding: 0%;
+        font-size: 1rem;
     }
     p {
-        font-size: 16px;
+        font-size: 1rem;
         color:#15051c   
     }
     ul.nav-bar {
@@ -37,15 +37,15 @@ body {
     overflow: hidden;
     background-image: linear-gradient(to bottom right,#d5c1febf, #ffd6f3c3 );
     display: block;
-    padding: 14px 16px;
+    
     
     
 }
 
     ul.nav-bar li a{
     display: block;
-    padding: 14px 16px;
-
+    padding: 3rem 5rem;
+    font-size: 1.7rem;
     text-align:center;
     text-decoration: none;
     color: #8c6c75;
@@ -179,18 +179,24 @@ ul.nav-bar li a:active {
         padding-left: 30%;
         padding-right: 10%;
     }
+    .card {
+        padding-left: 0%;
+        padding-right: 50%;
+    }
 }
 
 
 @media (max-width: 600px) {
 body { 
         background-color: #ffd6f369;
-        
+        padding: 2%;
         font-size: 1rem;
     }
     p {
-        font-size: .4rem;
-        color:#15051c   
+        font-size: 1rem;
+        color:#15051c;  
+        padding-right: 10%;
+        padding-left: 5%; 
     }
     ul.nav-bar {
     list-style-type: none;
@@ -198,15 +204,15 @@ body {
     padding: 0%;
     overflow: hidden;
     background-image: linear-gradient(to bottom right,#d5c1febf, #ffd6f3c3 );
-    display: block;
-    padding: 0.88rem 1rem;
+    display: flex;
+    padding: .88rem 1rem;
     
     
 }
 
     ul.nav-bar li a{
-    display: block;
-    padding: 0.88rem 1rem;
+    display: flex;
+    padding: .55rem;
 
     text-align:center;
     text-decoration: none;
@@ -261,12 +267,26 @@ ul.nav-bar li a:active {
     .business {
         padding-left: 5%;
         padding-right: 0%;
-        padding-top: 30%;
+        padding-top: 40%;
     }
     .card {
-        padding-left: 10%;
-        padding-right: 0%;
+        padding-left: 0%;
+        padding-right: 35%;
     }
+    div.flex-container {
+    display: flex;
+    flex-direction: column;
+
+}
+div.flex-container > div {
+margin: 0%;
+}
+.letter {
+    word-spacing: 35%;
+    letter-spacing: 2;
+    line-height: 180%;
+    display: block;
+}
 }
 
 </style>
@@ -275,7 +295,7 @@ ul.nav-bar li a:active {
     <ul class="nav-bar" >
         <li style="float:left">
             <a href="index.html" class="active" >
-                <img src="logo.png" height="50" width="50">
+                <img src="logo.png" height="60" width="60">
             </a>
         </li>
         <li style="float:right">
