@@ -79,7 +79,7 @@ for (const time of timelines) {
 });
 }
 
-timeline_wrapper.addEventListener('mousemove', (event) => {
+timeline_wrapper.addEventListener('touchstart', (event) => {
         const timeline = document.querySelector('.timeline');
         let scroll_width = event.pageX / timeline_wrapper.clientWidth 
         * ( timeline_wrapper.clientWidth - timeline.clientWidth);
