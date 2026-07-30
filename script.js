@@ -62,7 +62,7 @@ const timelines = document.querySelectorAll('.timeline li .data');
 for (const time of timelines) {
     time.onclick =() => time.classList.toggle('show');
 
-    time.addEventListener('click', (event) => {
+    time.addEventListener('pointerdown', (event) => {
     
 
     if(!time.classList.toggle('show')) {
@@ -79,7 +79,7 @@ for (const time of timelines) {
 });
 }
 
-timeline_wrapper.addEventListener('touchstart', (event) => {
+timeline_wrapper.addEventListener('pointerdown', (event) => {
         const timeline = document.querySelector('.timeline');
         let scroll_width = event.pageX / timeline_wrapper.clientWidth 
         * ( timeline_wrapper.clientWidth - timeline.clientWidth);

@@ -773,7 +773,7 @@ div.flex-container {
 }
 .timeline li .title {
     top:2.4rem;
-    font: 600 1.1rem 'poppins', sans-serrif;
+    font: 600 1.1rem 'poppins', sans-serif;
     white-space: pre;
     opacity: 0;
     
@@ -801,7 +801,7 @@ div.flex-container {
     height: 1.3rem;
     background-color: #15051c;
     overflow: hidden;
-    border-radius: 50%;
+    border-radius: 0%;
     color: #fff;
     display: flex;
     flex-direction: column;
