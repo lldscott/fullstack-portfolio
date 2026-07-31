@@ -1,18 +1,18 @@
 
 window.onload =  function() {
-    const form = document.querySelector("form");
+    const contactForm = document.querySelector("#contactForm");
 
-    form.addEventListener("submit", function(event) {
+    contactForm.addEventListener("submit", function(event) {
         event.preventDefault();
     })
 }
 
 function sendEmail(){ 
     const templateParams = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,   
-        subject: document.getElementById("subject").value,
-        message: document.getElementById("message").value
+        name: document.getElementById("#name").value,
+        email: document.getElementById("#email").value,   
+        subject: document.getElementById("#subject").value,
+        message: document.getElementById("#message").value
 };
 
 emailjs
@@ -39,7 +39,6 @@ document.addEventListener("click", (e) => {
         floatingBtn.classList.remove("active");
     }
 })
-
 //const contact_btn = document.querySelector('.contact');
 
 //for (const btn of contact) {
@@ -62,7 +61,7 @@ const timelines = document.querySelectorAll('.timeline li .data');
 for (const time of timelines) {
     time.onclick =() => time.classList.toggle('show');
 
-    time.addEventListener('pointerdown', (event) => {
+    time.addEventListener('touchstart', (event) => {
     
 
     if(!time.classList.toggle('show')) {
@@ -79,13 +78,7 @@ for (const time of timelines) {
 });
 }
 
-timeline_wrapper.addEventListener('pointerdown', (event) => {
-        const timeline = document.querySelector('.timeline');
-        let scroll_width = event.pageX / timeline_wrapper.clientWidth 
-        * ( timeline_wrapper.clientWidth - timeline.clientWidth);
-        
-        timeline.style.left = scroll_width.toFixed(1) + 'px';
-    })
+
     
     
 
