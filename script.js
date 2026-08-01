@@ -1,18 +1,18 @@
 
 window.onload =  function() {
-    const contactForm = document.querySelector("#contactForm");
+    const form = document.querySelector("#form");
 
-    contactForm.addEventListener("submit", function(event) {
+    form.addEventListener("submit", function(event) {
         event.preventDefault();
     })
 }
 
 function sendEmail(){ 
     const templateParams = {
-        name: document.getElementById("#name").value,
-        email: document.getElementById("#email").value,   
-        subject: document.getElementById("#subject").value,
-        message: document.getElementById("#message").value
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,   
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
 };
 
 emailjs
