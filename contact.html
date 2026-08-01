@@ -99,6 +99,10 @@ ul.nav-bar li a:active {
         padding-left: 30%;
         padding-right: 10%;
     }
+    .card {
+        padding-left: 15%;
+        padding-right: 0%;
+    }
 
 @media (max-width: 1024px) {
 body { 
@@ -301,7 +305,7 @@ margin: 0%;
         <h1 class="center" >Contact Me</h1>
         <div>
             <div class="flex-container">
-        <form class="center" id="contactForm" style="opacity: 0.6;">
+        <form class="center" id="form" style="opacity: 0.6;">
             <div class="position">
                 <input   class="input" type="text" id="name" placeholder="name" required />
             
@@ -312,7 +316,7 @@ margin: 0%;
                 <input class="input" type="email" id="email" placeholder="email"  required />      
             </div>
             <div>
-                <textarea  class="input"    id="message" placeholder="message" rows="10" cols="50" required></textarea>
+                <textarea  class="input" id="message" placeholder="message" rows="10" cols="50" required></textarea>
             </div>
             <button style="background-color: #dac5fe; color: #15051c;" type="button" onclick="sendEmail()">Send</button>
         </div>
@@ -335,5 +339,4 @@ margin: 0%;
 
 </body>
     <script src="script.js"></script>
-
 </html>
